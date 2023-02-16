@@ -5,6 +5,7 @@ EDF_extr_EEG = function(d){
   cat('\f')
   
 if ( !require(edf) ) {cat('\n'); install.packages("edf")}
+if ( !require(edfReader) ) {cat('\n'); install.packages("edfReader")}
 if ( !require(purrr) ) {cat('\n'); install.packages("purrr")}
   
   cat('\n', paste(rep('= ', 30), collapse = ""),
